@@ -152,7 +152,6 @@ img {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
-
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
@@ -174,7 +173,7 @@ img {
 }
 /* advantages */
 
-.advantages-list{
+.advantages-list {
   display: flex;
 }
 
@@ -185,8 +184,6 @@ img {
 .advantages-item:not(:last-child) {
   margin-right: 30px;
 }
-
-
 
 .advantages-title {
   color: var(--text-title-color);
@@ -206,10 +203,14 @@ img {
 
 /* examples of work */
 
+.work-examples {
+  padding-top: 0;
+}
+
 .work-examples-list {
   display: flex;
-  margin-right:calc(-1* var(--sat-gap));
-  margin-top:calc(-1* var(--sat-gap));
+  margin-right: calc(-1 * var(--sat-gap));
+  margin-top: calc(-1 * var(--sat-gap));
 }
 
 .examples-title {
@@ -229,8 +230,8 @@ img {
 }
 /* our team */
 
-.team-list {
-  display: flex;
+.team {
+  background: #f5f4fa;
 }
 
 .team-title {
@@ -243,26 +244,52 @@ img {
   margin-bottom: 50px;
 }
 
+.team-list {
+  display: flex;
+}
+
+.team-member:not(:last-child) {
+  margin-right: 30px;
+}
+
+.card {
+  width: 270px;
+  min-height: 368px;
+  border-radius: 0px 0px 4px 4px;
+  background: var(--primary-white-color);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.member-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .member-name {
-  color: var(--text-title-color);
-  text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--text-title-color);
 }
 
 .member-position {
-  color: var(--text-primary);
-  text-align: center;
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-primary);
 }
 
 /* footer */
 .footer {
+  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
 
@@ -271,6 +298,16 @@ img {
   font-size: 14px;
   line-height: 1.71; /* 171.429% */
   letter-spacing: 0.03em;
+  margin-top: 30px;
+}
+
+.logo-accent-footer {
+  color: var(--primary-white-color);
+}
+
+.footer-address-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-mail,
@@ -281,9 +318,23 @@ img {
   font-weight: 400;
   line-height: 1.71; /* 171.429% */
   letter-spacing: 0.03em;
+  margin-top: 9px;
 }
 
 /* !!!!!!!!!PORTFOLIO!!!!!!!!! */
+
+.filter-btn-list {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 6px 22px;
+}
+
+.filter-btn-item:not(:last-child) {
+  margin-right: 8px;
+}
 
 .filter-btn {
   color: var(--text-title-color);
@@ -301,6 +352,33 @@ img {
 .filter-btn:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+}
+
+/* !!!!!!!product of work!!!!!!! */
+
+.section-product-work {
+  padding-top: 0;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(-1 * var(--sat-gap));
+  margin-bottom: calc(-1 * var(--sat-gap));
+}
+
+.product-item {
+  flex-basis: calc(100% / 3 - var(--sat-gap));
+  margin-right: var(--sat-gap);
+  margin-top: var(--sat-gap);
+  min-height: 404px;
+  width: 370px;
+  border: 1px solid #eee;
+  background: var(--primary-white-color);
+}
+
+.product-text-container {
+  padding: 20px 24px;
 }
 
 .product-title {
